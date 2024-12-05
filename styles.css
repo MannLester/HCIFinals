@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #cd8f4f #2c3531;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #231F20;
+}
+
+.navbar {
+    position: fixed;
+    height: 10%;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #27322e;
+    z-index: 1000;
+    opacity: 1;
+
+    transition: opacity 0.3s ease-in-out;
+}
+
+.order-button {
+    position: absolute;
+    width: 286px;
+    height: 200px;
+    top: 430px;
+    left: 6.8%;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.order-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.order-hover {
+    opacity: 0;
+}
+
+.order-button:hover .order-hover {
+    opacity: 1;
+}
+
+.logo img {
+    height: 150px;
+    width: auto;
+    padding-bottom: 2%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 8%;
+    padding-right: 25%;
+    padding-bottom: 2.5%;
+}
+
+.nav-links a {
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 23px;    
+    border-radius: 8px;
+    
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 198px;
+
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    white-space: no-wrap;
+    text-overflow: ellipsis;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #cd8f4f;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: -1;
+}
+
+/* .nav-links a:hover::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+} */
+
+.nav-links a.active::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.nav-links a.active {
+    background-color: #cd8f4f;
+    color: white;
+}
+
+/* .nav-links a:hover {
+    background-color: #b17a42;
+    color: white;
+} */
+
+.cart-button {
+    position: relative;
+    padding-bottom: 150px;
+    width: auto;
+}
+
+.cart-button img {
+    height: 130px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cart-default {
+    opacity: 1;
+}
+
+.cart-hover {
+    opacity: 0;
+}
+
+.cart-button:hover .cart-default {
+    opacity: 0;
+}
+
+.cart-button:hover .cart-hover {
+    opacity: 1;
+}
+
+.page-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* This ensures the image covers the container while maintaining aspect ratio */
+    object-position: center; /* Centers the image */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.price-button{
+    position: absolute;
+    width:27%;
+    height:auto;
+    display: block;
+    padding: 0;
+}
+
+.price-button img{
+    width:100%;
+    height:auto;
+    object-fit: contain;
+}
+
+#black-shoe-button{
+    top:49%;
+    left:17.5%;
+}
+
+#white-shoe-button{
+    top:49%;
+    left:57.5%;
+}
+
+#black-shoe-button-hover{
+    opacity: 0;
+}
+
+#white-shoe-button-hover{
+    opacity: 0;
+}
+
+#black-shoe-button:hover #black-shoe-button {
+    opacity: 0;
+}
+
+#black-shoe-button:hover #black-shoe-button-hover {
+    opacity: 1;
+}
+
+#white-shoe-button:hover #white-shoe-button {
+    opacity: 0;
+}
+
+#white-shoe-button:hover #white-shoe-button-hover {
+    opacity: 1;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c3531;  /* Dark background color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cd8f4f;  /* Gold/brown color to match your theme */
+    border-radius: 6px;
+    border: 3px solid #2c3531;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b17a42;  /* Slightly darker on hover */
+}

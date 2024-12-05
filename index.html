@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI-Finals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/LogoIcon.png" alt="Mann Shoes Logo" class="logo-default">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="cart-button">
+            <a href="cartPage.html">
+                <img src="assets/ViewCartButton.png" alt="View Cart" class="cart-default">
+                <img src="assets/ViewIconHover.png" alt="View Cart Hover" class="cart-hover">
+            </a>
+        </div>
+    </nav>
+    <div class="page-container">
+        <div class="image-container">
+            <img src="assets/HomePage.png" alt="Home Page Design" loading="lazy" class="active">
+            <div class="order-button">
+                <a href="cartPage.html">
+                    <img src="assets/order_button_hover.png" alt="Order Button Hover" class="order-hover">
+                </a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="assets/AboutPage.png" alt="About Page Design" loading="lazy">
+        </div>
+        <div class="image-container">
+            <img src="assets/ProductPage.png" alt="Product Page Design" loading="lazy">
+            <div class="price-button" id="black-shoe-button">
+                <a href="cartPage.html">
+                <img src="assets/PriceButton.png" alt="Price Button" loading="lazy">
+                <img src="assets/PriceButtonHover.png" alt="Price Button" loading="lazy" id="black-shoe-button-hover">
+                </a>
+            </div>
+            <div class="price-button" id="white-shoe-button">
+                <a href="cartPage.html">
+                <img src="assets/PriceButton.png" alt="Price Button" loading="lazy">
+                <img src="assets/PriceButtonHover.png" alt="Price Button" loading="lazy" id="white-shoe-button-hover">
+                </a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="assets/ContactPage.png" alt="Contact Page Design" loading="lazy">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
